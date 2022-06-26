@@ -5,6 +5,7 @@ import clsx from 'clsx'
 
 import { Hero } from '@/components/Hero'
 import { Logo } from '@/components/Logo'
+import { LogoLight } from '@/components/LogoLight'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
@@ -13,6 +14,7 @@ import { ThemeSelector } from '@/components/ThemeSelector'
 
 function Header({ navigation }) {
   let [isScrolled, setIsScrolled] = useState(false)
+  let [isDark, setIsDark] = useState()
 
   useEffect(() => {
     function onScroll() {
@@ -24,6 +26,12 @@ function Header({ navigation }) {
       window.removeEventListener('scroll', onScroll)
     }
   }, [])
+
+  const themeChecker = (theme) => {
+    ;(theme === 'dark') | (theme === 'system')
+      ? setIsDark(true)
+      : setIsDark(false)
+  }
 
   return (
     <header
@@ -43,14 +51,14 @@ function Header({ navigation }) {
         <Link href="/">
           <a className="block w-10 overflow-hidden lg:w-auto">
             <span className="sr-only">Home page</span>
-            <Logo />
+            {isDark ? <Logo /> : <LogoLight />}
           </a>
         </Link>
       </div>
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0"></div>
       <div className="relative flex basis-0 items-center justify-end space-x-6 sm:space-x-8 md:flex-grow">
         <Search />
-        <ThemeSelector className="relative z-10" />
+        <ThemeSelector themeChecker={themeChecker} className="relative z-10" />
         <Link href="https://github.com">
           <a className="group">
             <span className="sr-only">GitHub</span>

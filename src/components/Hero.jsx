@@ -12,7 +12,7 @@ export function Hero() {
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-300">
                 Polywrap is the modern, open-source toolchain for developing
-                cross-platform software
+                cross-platform software.
               </p>
               <div className="mt-8 flex space-x-4 md:justify-center lg:justify-center">
                 <ButtonLink href="/second">Get started</ButtonLink>

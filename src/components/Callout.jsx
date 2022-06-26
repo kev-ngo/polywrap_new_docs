@@ -6,7 +6,7 @@ const styles = {
   note: {
     container:
       'bg-sky-50 dark:bg-slate-800/60 dark:ring-1 dark:ring-slate-300/10',
-    title: 'text-sky-900 dark:text-sky-400',
+    title: 'text-sky-900 dark:text-slate-200',
     body: 'text-teal-800 prose-code:text-sky-900 dark:text-slate-300 dark:prose-code:text-slate-300 prose-a:text-sky-900 [--tw-prose-background:theme(colors.sky.50)]',
   },
   warning: {

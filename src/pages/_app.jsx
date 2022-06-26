@@ -9,56 +9,47 @@ import '@/styles/tailwind.css'
 const navigation = [
   {
     title: 'Introduction',
+    links: [{ title: 'Getting started', href: '/' }],
+  },
+  {
+    title: 'Quick start guides',
     links: [
-      { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
+      {
+        title: 'Fetching wrappers (JS apps)',
+        href: '/docs/quick-start/fetching-wrappers',
+      },
+      {
+        title: 'Template Wasm wrapper',
+        href: '/docs/quick-start/wasm-wrapper',
+      },
     ],
   },
   {
     title: 'Core concepts',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
       {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
+        title: 'Polywrap overview',
+        href: '/docs/core-concepts/polywrap-overview',
       },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
-      {
-        title: 'Introduction to string theory',
-        href: '/docs/introduction-to-string-theory',
-      },
-      { title: 'The buttery effect', href: '/docs/the-butterfly-effect' },
+      { title: 'WRAP protocol', href: '/docs/core-concepts/wrap-protocol' },
+      { title: 'Wrappers', href: '/docs/core-concepts/wrappers' },
     ],
   },
   {
-    title: 'Advanced guides',
+    title: 'Guides',
     links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
       {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
+        title: 'Creating Wasm wrappers',
+        href: '/docs/guides/wasm-wrappers-as',
       },
-    ],
-  },
-  {
-    title: 'API reference',
-    links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
-    ],
-  },
-  {
-    title: 'Contributing',
-    links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      {
+        title: 'End-to-end tests (Wasm wrappers)',
+        href: '/docs/guides/e2e',
+      },
+      {
+        title: 'Creating plugin wrappers',
+        href: '/docs/guides/plugin-wrappers',
+      },
     ],
   },
 ]

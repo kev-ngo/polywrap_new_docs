@@ -58,6 +58,7 @@ export function ThemeSelector(props) {
   useEffect(() => {
     if (selectedTheme) {
       document.documentElement.setAttribute('data-theme', selectedTheme.value)
+      props.themeChecker(selectedTheme.value)
     } else {
       setSelectedTheme(
         themes.find(
