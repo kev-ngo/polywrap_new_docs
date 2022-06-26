@@ -47,10 +47,10 @@ const navigation = [
   {
     title: 'API reference',
     links: [
-      { title: 'Polywrap.predict()', href: '/docs/polywrap-predict' },
-      { title: 'Polywrap.flush()', href: '/docs/polywrap-flush' },
-      { title: 'Polywrap.revert()', href: '/docs/polywrap-revert' },
-      { title: 'Polywrap.regret()', href: '/docs/polywrap-regret' },
+      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
+      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
+      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
+      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
     ],
   },
   {
@@ -100,7 +100,7 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
   return sections
 }
 
-export default function documentation({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   let title = pageProps.markdoc?.frontmatter.title
 
   let pageTitle =

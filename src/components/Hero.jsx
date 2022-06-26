@@ -1,7 +1,4 @@
 import { ButtonLink } from '@/components/Button'
-import Image from 'next/image'
-import blurCyanImage from '@/images/blur-cyan.png'
-import blurIndigoImage from '@/images/blur-indigo.png'
 
 export function Hero() {
   return (
@@ -13,30 +10,6 @@ export function Hero() {
               <p className="inline bg-gradient-to-r from-emerald-500 to-cyan-400  bg-clip-text font-display text-5xl tracking-tight text-transparent">
                 Supercharged, Decentralized SDKs
               </p>
-              <div className="absolute -left-64 -top-64">
-                <Image
-                  src={blurCyanImage}
-                  alt=""
-                  layout="fixed"
-                  width={575}
-                  height={455}
-                  unoptimized
-                  priority
-                  className="opacity-60"
-                />
-              </div>
-              <div className="-bottom-55 absolute -right-44">
-                <Image
-                  src={blurIndigoImage}
-                  alt=""
-                  layout="fixed"
-                  width={267}
-                  height={267}
-                  unoptimized
-                  priority
-                  className="opacity-70"
-                />
-              </div>
               <p className="mt-3 text-2xl tracking-tight text-slate-300">
                 Polywrap is the modern, open-source toolchain for developing
                 cross-platform software
