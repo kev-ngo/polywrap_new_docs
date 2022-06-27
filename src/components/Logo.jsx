@@ -3,7 +3,7 @@ import React from 'react'
 export function Logo() {
   return (
     <svg
-      width="155"
+      width="130"
       viewBox="0 0 563 146"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
